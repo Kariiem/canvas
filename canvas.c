@@ -164,9 +164,9 @@ int main(void)
     double frame_time_accumulator = 0.0f;
 
 
-    GLuint u_time = glGetUniformLocation(rptr->program, "u_time");
-    GLuint u_resolution = glGetUniformLocation(rptr->program, "u_resolution");
-    GLuint u_mouse = glGetUniformLocation(rptr->program, "u_mouse");
+    GLint u_time = glGetUniformLocation(rptr->program, "u_time");
+    GLint u_resolution = glGetUniformLocation(rptr->program, "u_resolution");
+    GLint u_mouse = glGetUniformLocation(rptr->program, "u_mouse");
 
     struct {
         GLint x,y, width, height;
